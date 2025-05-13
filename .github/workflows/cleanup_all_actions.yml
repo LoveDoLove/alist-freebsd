@@ -16,7 +16,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const { owner, repo } = context.repo;
-            // Fetch up to 1000 most recent completed runs
+            const currentRunId = process.env.GITHUB_RUN_ID;
             let page = 1;
             let deleted = 0;
             while (true) {
@@ -29,6 +29,10 @@ jobs:
               const runs = response.data.workflow_runs;
               if (runs.length === 0) break;
               for (const run of runs) {
+                if (String(run.id) === String(currentRunId)) {
+                  console.log(`Skipping current run id=${run.id}`);
+                  continue;
+                }
                 console.log(`Deleting run id=${run.id}, name=${run.name}, status=${run.status}, conclusion=${run.conclusion}`);
                 await github.rest.actions.deleteWorkflowRun({ owner, repo, run_id: run.id });
                 deleted++;
@@ -36,7 +40,7 @@ jobs:
               page++;
             }
             if (deleted === 0) {
-              console.log('No workflow runs found to delete.');
+              console.log('No workflow runs found to delete (except current run).');
             } else {
-              console.log(`Deleted ${deleted} workflow runs.`);
+              console.log(`Deleted ${deleted} workflow runs (except current run).`);
             }
