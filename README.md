@@ -11,11 +11,9 @@
 <div align="center">
   <h3 align="center">alist-freebsd</h3>
   <p align="center">
-    FreeBSD build scripts and patches for <a href="https://github.com/alist-org/alist">alist</a>.
-    <br />
+    FreeBSD build scripts and patches for <a href="https://github.com/alist-org/alist">alist</a>.<br />
     <a href="#getting-started"><strong>Get Started »</strong></a>
-    <br />
-    <br />
+    <br /><br />
     <a href="#usage">Usage</a>
     &middot;
     <a href="#contributing">Contributing</a>
@@ -23,6 +21,9 @@
     <a href="#license">License</a>
   </p>
 </div>
+
+<!-- ZMTO Acknowledgment -->
+> **Note:** This project is supported by [ZMTO](https://www.zmto.com) as part of their open-source VPS program. Special thanks to ZMTO for empowering open-source innovation!
 
 <details>
   <summary>Table of Contents</summary>
@@ -75,6 +76,9 @@ To build alist for FreeBSD, ensure you have Go and Clang with FreeBSD target sup
 
 After building, the `alist` binary will be available in the project directory. Deploy or use as needed on your FreeBSD system.
 
+- For configuration and advanced usage, refer to the upstream [alist documentation](https://github.com/alist-org/alist#readme).
+- FreeBSD-specific patches and scripts are included for seamless integration.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Roadmap
@@ -82,6 +86,8 @@ After building, the `alist` binary will be available in the project directory. D
 - [x] FreeBSD build support
 - [x] Automated release workflow
 - [x] Additional FreeBSD-specific patches
+- [ ] Continuous integration for FreeBSD
+- [ ] More detailed usage guides
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
