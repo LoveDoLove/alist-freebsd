@@ -1,11 +1,13 @@
 <a id="readme-top"></a>
 
 <!-- DEPRECATION BANNER -->
+
 > **⚠️ DEPRECATED - This project is no longer maintained and will be archived soon.**
 >
 > **Official FreeBSD Support Available:** Alist now provides official FreeBSD binaries. Please use the official releases from [AlistGo/alist](https://github.com/AlistGo/alist/releases).
 
 <!-- PROJECT SHIELDS -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -87,6 +89,7 @@ Update any scripts to use the new official download URLs.
 ## Historical Information
 
 ### Features (Historical)
+
 - Multiple storage support (local, cloud, object, network protocols)
 - Easy deployment (download and run)
 - File previews (PDF, markdown, code, images, video, audio)
@@ -97,11 +100,13 @@ Update any scripts to use the new official download URLs.
 - Offline download, multi-thread acceleration
 
 ### Automated Builds (Historical)
+
 - Used GitHub Actions to build Alist for FreeBSD daily
 - Published binaries as GitHub releases
 - **Discontinued:** Use official FreeBSD releases from the main Alist repository
 
 ### Contributing (Historical)
+
 - This project is no longer accepting contributions.
 - For contributions, visit the [official Alist repository](https://github.com/AlistGo/alist).
 
@@ -123,12 +128,15 @@ Note: Alist itself is licensed under AGPL-3.0.
 - [GitHub Actions](https://github.com/features/actions) - For the automated build pipeline
 - **Community:** Thanks to everyone who used and supported this project
 - **Alist Team:** For adding official FreeBSD support
+  <!-- ZMTO Acknowledgment -->
+  > **Note:** This project is supported by [ZMTO](https://www.zmto.com) as part of their open-source VPS program. Special thanks to ZMTO for empowering open-source innovation!
 
 **🎉 Mission Accomplished:** This project succeeded by encouraging official FreeBSD support in the main Alist project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/LoveDoLove/alist-freebsd.svg?style=for-the-badge
 [contributors-url]: https://github.com/LoveDoLove/alist-freebsd/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/LoveDoLove/alist-freebsd.svg?style=for-the-badge
