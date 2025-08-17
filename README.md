@@ -11,8 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/LoveDoLove/alist-freebsd">
-    <!-- If you have a logo, place it in images/logo.png -->
-    <!-- <img src="images/logo.png" alt="Logo" width="80" height="80"> -->
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">alist-freebsd</h3>
